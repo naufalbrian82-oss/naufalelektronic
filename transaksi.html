@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Transaksi - Naufal Elektronic</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <div class="inner">
+    <div class="brand">
+      <div class="brand-logo">
+        <img src="elektronic.jpg" alt="naufal elektronic" style="width:100%;height:100%;border-radius:15px;">
+      </div>
+      <div>
+        <div class="brand-title">Naufal Elektronic</div>
+        <div class="small">Form Transaksi</div>
+      </div>
+    </div>
+    <nav style="margin-left:auto">
+      <a href="index.html">Produk</a>
+      <a href="transaksi.html" class="active">Transaksi</a>
+      <a href="invoice.html">Invoice</a>
+      <a href="kontak.html">Kontak Kami</a>
+    </nav>
+  </div>
+</header>
+<div class="container" style="grid-template-columns:1fr">
+  <section class="card form-card">
+    <h2>Form Transaksi</h2>
+    <form id="transaksi-form">
+      <label for="nama">Nama Lengkap</label>
+      <input required id="nama" name="nama">
+
+      <label for="email">Email</label>
+      <input required id="email" name="email" type="email">
+
+      <label for="alamat">Alamat</label>
+      <textarea required id="alamat" name="alamat" rows="3"></textarea>
+
+      <label for="produk">Produk</label>
+      <input id="produk" name="produk" required readonly>
+
+      <label for="harga">Harga</label>
+      <input id="harga" name="harga" type="number" required readonly>
+
+      <label for="qty">Qty</label>
+      <input id="qty" name="qty" type="number" value="1" min="1" required>
+
+      <label for="kurir">Kurir</label>
+      <select id="kurir" name="kurir" required>
+        <option value="Pickup">Pickup</option>
+        <option value="JNE">JNE</option>
+        <option value="J&T">J&T</option>
+      </select>
+
+      <label for="pembayaran">Metode Pembayaran</label>
+      <select id="pembayaran" name="pembayaran" required>
+        <option>Transfer Bank</option>
+        <option>QRIS</option>
+        <option>COD</option>
+      </select>
+
+      <button type="submit" class="btn" style="margin-top:12px">Checkout</button>
+    </form>
+  </section>
+</div>
+<footer>
+  <div class="container" style="grid-template-columns:1fr">
+    &copy; 2025 Naufal Elektronic.
+  </div>
+</footer>
+<script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Invoice - Naufal Elektronic</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body id="invoice-page">
+
+<header>
+  <div class="inner">
+    <div class="brand">
+      <div class="brand-logo">
+        <img src="elektronic.jpg" alt="naufal elektronic" style="width:100%;height:100%;border-radius:15px;">
+      </div>
+      <div>
+        <div class="brand-title">Naufal Elektronic</div>
+        <div class="small">Invoice</div>
+      </div>
+    </div>
+    <nav style="margin-left:auto">
+      <a href="index.html">Produk</a>
+      <a href="transaksi.html">Transaksi</a>
+      <a href="invoice.html" class="active">Invoice</a>
+      <a href="kontak.html">Kontak Kami</a>
+    </nav>
+  </div>
+</header>
+
+<div class="container" style="grid-template-columns:1fr">
+  <section class="card invoice">
+    <h2>Invoice</h2>
+    <div class="kv">
+      <div>No. Invoice</div><div><span class="badge">NE-001</span></div>
+      <div>Tanggal</div><div data-i="tanggal"></div>
+      <div>Nama</div><div data-i="nama"></div>
+      <div>Email</div><div data-i="email"></div>
+      <div>Alamat</div><div data-i="alamat"></div>
+      <div>Metode</div><div data-i="pembayaran"></div>
+      <div>Kurir</div><div data-i="kurir"></div>
+    </div>
+    <hr>
+    <div class="grid" style="grid-template-columns:180px 1fr">
+      <img id="img-produk" alt="Produk" style="width:100%;border-radius:12px;border:1px solid #2c1f57">
+      <div>
+        <table>
+          <thead>
+            <tr><th>Produk</th><th>Qty</th><th>Harga</th><th>Subtotal</th></tr>
+          </thead>
+          <tbody id="tbl-items"></tbody>
+          <tfoot>
+            <tr><th colspan="3" style="text-align:right">Ongkir</th><th data-i="ongkir"></th></tr>
+            <tr><th colspan="3" style="text-align:right">Total</th><th data-i="total"></th></tr>
+          </tfoot>
+        </table>
+        <button class="btn" id="btn-print">Cetak / Simpan PDF</button>
+      </div>
+    </div>
+  </section>
+</div>
+<footer>
+  <div class="container" style="grid-template-columns:1fr">
+    &copy; 2025 Naufal Elektronic.
+  </div>
+</footer>
+<script src="script.js"></script>
+</body>
+</html>

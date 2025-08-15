@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Naufal Elektronic</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <div class="inner">
+    <div class="brand">
+      <div class="brand-logo">
+        <img src="elektronic.jpg" alt="naufal elektronic" style="width:100%;height:100%;border-radius:15px;">
+      </div>
+      <div>
+        <div class="brand-title">Naufal Elektronic — Produk & Layanan</div>
+        <div class="small">Elektronik Terpercaya untuk Anda</div>
+      </div>
+    </div>
+    <nav style="margin-left:auto">
+      <a href="index.html" class="active">Produk</a>
+      <a href="transaksi.html">Transaksi</a>
+      <a href="invoice.html">Invoice</a>
+      <a href="kontak.html">Kontak Kami</a>
+    </nav>
+  </div>
+</header>
+<marquee behavior="scroll" direction="left">Promo Agustus: Diskon 5% untuk pembelian TV LG OLED Flex</marquee>
+<div class="container">
+  <aside class="sidebar">
+    <h3>Kategori</h3>
+    <p class="small">Pilih produk favorit Anda.</p>
+    <ul>
+      <li><span class="badge">Baru</span> Laptop Windows</li>
+      <li><span class="badge">Favorit</span> TV LG OLED Flex</li>
+    </ul>
+  </aside>
+  <main>
+
+  <section class="card">
+    <h2>Produk Kami</h2>
+    <div class="grid">
+      <div class="card product">
+        <img src="laptop.jpg" alt="Laptop Windows">
+        <h3>Laptop Windows</h3>
+        <p class="small">Laptop modern untuk produktivitas Anda.</p>
+        <p><strong>Rp12.500.000</strong></p>
+        <button class="btn" onclick='selectProduct({"name": "Laptop Windows", "price": 12500000, "image": "laptop.jpg"})'>Beli</button>
+      </div>
+      <div class="card product">
+        <img src="tv.jpg" alt="TV LG OLED Flex">
+        <h3>TV LG OLED Flex</h3>
+        <p class="small">Pengalaman menonton terbaik dengan layar fleksibel.</p>
+        <p><strong>Rp29.999.000</strong></p>
+        <button class="btn" onclick='selectProduct({"name": "TV LG OLED Flex", "price": 29999000, "image": "tv.jpg"})'>Beli</button>
+      </div>
+    </div>
+  </section>
+
+  </main>
+</div>
+<footer>
+  <div class="container" style="grid-template-columns:1fr">
+    &copy; 2025 Naufal Elektronic. Semua Hak Dilindungi.
+  </div>
+</footer>
+<script src="script.js"></script>
+
+</body>
+</html>
